@@ -4,7 +4,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://prep-tracker-three-sage.vercel.app",
+    ],
   })
 );
 
